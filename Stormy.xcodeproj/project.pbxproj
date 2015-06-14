@@ -13,6 +13,10 @@
 		4BB4A2FC1B2D15D800798B75 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BB4A2FB1B2D15D800798B75 /* Images.xcassets */; };
 		4BB4A2FF1B2D15D800798B75 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BB4A2FD1B2D15D800798B75 /* LaunchScreen.xib */; };
 		4BB4A30B1B2D15D800798B75 /* StormyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB4A30A1B2D15D800798B75 /* StormyTests.swift */; };
+		4BB4A3171B2D17C000798B75 /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BB4A3161B2D17C000798B75 /* CurrentWeather.plist */; };
+		4BB4A3191B2D18D500798B75 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB4A3181B2D18D500798B75 /* CurrentWeather.swift */; };
+		4BB4B5311B2D3D9D009E2D60 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB4B5301B2D3D9D009E2D60 /* NetworkOperation.swift */; };
+		4BB4B5331B2D43D8009E2D60 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB4B5321B2D43D8009E2D60 /* ForecastService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		4BB4A3041B2D15D800798B75 /* StormyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB4A3091B2D15D800798B75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BB4A30A1B2D15D800798B75 /* StormyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormyTests.swift; sourceTree = "<group>"; };
+		4BB4A3161B2D17C000798B75 /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CurrentWeather.plist; path = ../../../../Downloads/CurrentWeather.plist; sourceTree = "<group>"; };
+		4BB4A3181B2D18D500798B75 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		4BB4B5301B2D3D9D009E2D60 /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		4BB4B5321B2D43D8009E2D60 /* ForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,9 @@
 				4BB4A2FB1B2D15D800798B75 /* Images.xcassets */,
 				4BB4A2FD1B2D15D800798B75 /* LaunchScreen.xib */,
 				4BB4A2F21B2D15D800798B75 /* Supporting Files */,
+				4BB4A3181B2D18D500798B75 /* CurrentWeather.swift */,
+				4BB4B5301B2D3D9D009E2D60 /* NetworkOperation.swift */,
+				4BB4B5321B2D43D8009E2D60 /* ForecastService.swift */,
 			);
 			path = Stormy;
 			sourceTree = "<group>";
@@ -90,6 +101,7 @@
 		4BB4A2F21B2D15D800798B75 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4BB4A3161B2D17C000798B75 /* CurrentWeather.plist */,
 				4BB4A2F31B2D15D800798B75 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -193,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BB4A2FA1B2D15D800798B75 /* Main.storyboard in Resources */,
+				4BB4A3171B2D17C000798B75 /* CurrentWeather.plist in Resources */,
 				4BB4A2FF1B2D15D800798B75 /* LaunchScreen.xib in Resources */,
 				4BB4A2FC1B2D15D800798B75 /* Images.xcassets in Resources */,
 			);
@@ -212,7 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BB4B5311B2D3D9D009E2D60 /* NetworkOperation.swift in Sources */,
 				4BB4A2F71B2D15D800798B75 /* ViewController.swift in Sources */,
+				4BB4A3191B2D18D500798B75 /* CurrentWeather.swift in Sources */,
+				4BB4B5331B2D43D8009E2D60 /* ForecastService.swift in Sources */,
 				4BB4A2F51B2D15D800798B75 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +425,7 @@
 				4BB4A3101B2D15D800798B75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BB4A3111B2D15D800798B75 /* Build configuration list for PBXNativeTarget "StormyTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +434,7 @@
 				4BB4A3131B2D15D800798B75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
